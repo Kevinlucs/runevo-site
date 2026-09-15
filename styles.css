@@ -303,3 +303,18 @@ h1,h2,h3,h4,h5,h6,
 }
 .waitlist-form .button{width:100%;margin-top:.5rem;min-height:52px}
 .waitlist-feedback{color:var(--run-evo-neon);font-size:.875rem;margin:0}
+
+/* Logo RunEvo */
+.runevo-logo{display:block;height:auto}
+.runna-nav-logo{display:flex;align-items:center}
+.nav-logo-image,.runevo-logo{width:7rem;height:auto}
+.runevo-logo--mobile{width:10rem}
+.footer-brand .runevo-logo{width:8rem;margin-bottom:1rem}
+@media (max-width:991px){.runevo-logo--mobile{width:9rem}}
+
+/* Botão Em breve disponível */
+.app-coming-soon{background:#000;color:#fff}
+
+/* Ajuste de espaçamento da seção app-cta */
+.app-cta-content{max-width:38rem;padding-left:1rem}
+@media (max-width:767px){.app-cta-content{padding-left:0}}
