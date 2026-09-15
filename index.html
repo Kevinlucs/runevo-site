@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080A09" />
+    <title>RunEvo — Treinamento de corrida</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Webflow-compatible page shell: Phase 1 implements only the header. -->
+    <header class="nav_component" data-site-header>
+      <div class="runna-nav">
+        <div class="runna-nav-container">
+          <div class="nav_logo-wrapper">
+            <a class="runna-nav-logo" href="#inicio" aria-label="RunEvo, página inicial">
+              <span class="brand-wordmark" aria-label="RunEvo">RunEvo</span>
+            </a>
+          </div>
+
+          <nav id="primary-navigation" class="runna-nav-menu" aria-label="Navegação principal">
+            <div class="runna-nav-mobile-header">
+              <span class="brand-wordmark brand-wordmark--mobile" aria-label="RunEvo">RunEvo</span>
+              <button class="runna-nav-mobile-close" type="button" aria-label="Fechar menu" data-menu-close>
+                <img src="assets/mobile-menu-close.svg" width="32" height="32" alt="" />
+              </button>
+            </div>
+
+              <div class="nav-links">
+                <a class="nav_link" href="#inicio">SOBRE</a>
+                <a class="nav_link" href="#recursos">MÉTODO</a>
+                <a class="nav_link" href="#planos">PLANOS</a>
+                <a class="nav_link" href="#suporte">SUPORTE</a>
+              </div>
+
+            <div class="nav_button-group nav_button-group--mobile">
+              <a class="button is-salmon-button is-nav-button" href="#proximo-nivel">JUNTAR-SE</a>
+            </div>
+          </nav>
+
+          <div class="nav_button-group nav_button-group--desktop">
+            <a class="button is-salmon-button is-nav-button" href="#proximo-nivel">JUNTAR-SE</a>
+          </div>
+
+          <button
+            class="runna-nav-burger"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            data-menu-toggle
+          >
+            <svg class="runna-nav-burger-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <button class="menu-backdrop" type="button" tabindex="-1" aria-label="Fechar menu" data-menu-close></button>
+    </header>
+
+    <main id="inicio">
+      <!-- Estrutura dos próximos componentes; conteúdo visual será implementado nas próximas fases. -->
+      <section class="section_hero-header" aria-labelledby="hero-title">
+        <div class="padding-global">
+          <div class="container-medium hero-header_padding">
+            <div class="hero-header_component">
+              <h1 id="hero-title" class="heading-style-h1">Correr ficou <span>fácil</span></h1>
+              <p class="text-size-large">Receba o suporte de que corredores precisam com planos de corrida personalizados para atingir suas metas, desde treinamento para correr 5 km em menos tempo até a conclusão da sua primeira maratona.</p>
+              <a id="teste" class="button is-salmon-button" href="#planos">Iniciar o seu teste gratuito</a>
+              <p class="app-store_disclaimer">A primeira semana é gratuita. Cancele a qualquer momento.</p>
+              <div class="header-image-wrapper">
+                <img
+                  class="header_image"
+                  src="assets/banner-1.webp"
+                  width="910"
+                  height="372"
+                  fetchpriority="high"
+                  alt="Dispositivos exibindo o aplicativo RunEvo."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-diagonal-divider" aria-hidden="true"></div>
+      </section>
+      <section id="recursos" class="section_why-runna" aria-labelledby="why-runna-title">
+        <div class="padding-global padding-section">
+          <div class="why-runna_component">
+            <figure class="why-runna_media">
+              <img src="assets/banner-2.webp" alt="Telas do aplicativo RunEvo em smartphones." />
+            </figure>
+            <div class="why-runna_content">
+              <h2 id="why-runna-title">Por que usar o RunEvo?</h2>
+              <ol class="why-runna_list">
+                <li>
+                  <span>1</span>
+                  <div><h3>Planos de corrida personalizados só para você</h3><p>Nossos planos de treino, classificados como os melhores, são personalizados especialmente para você, com treinos variados e empolgantes, desenvolvidos pelo RunEvo Engine.</p></div>
+                </li>
+                <li>
+                  <span>2</span>
+                  <div><h3>Sincronização com seus dispositivos favoritos</h3><p>Acompanhe todos os seus treinos em seus dispositivos em tempo real enquanto você corre. Nós ajudaremos você até a definir o ritmo certo.</p></div>
+                </li>
+                <li>
+                  <span>3</span>
+                  <div><h3>Apoio completo</h3><p>Obtenha apoio completo para se tornar um corredor melhor, quer você precise de dicas sobre sua técnica de corrida, orientação nutricional ou exercícios para joelho de corredor.</p></div>
+                </li>
+                <li>
+                  <span>4</span>
+                  <div><h3>Treinamento de força e mobilidade para corredores</h3><p>Complemente sua corrida com um programa personalizado de treino de força, condicionamento físico e mobilidade que se adapte ao seu plano de corrida.</p></div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="planos" class="section_plans" aria-labelledby="plans-title">
+        <div class="padding-global padding-section">
+          <div class="custom-plan-card">
+            <img class="custom-plan-image" src="assets/banner-3.webp" alt="Emblema RunEvo para planos personalizados." />
+            <div class="custom-plan-copy">
+              <h2 id="plans-title">Plano personalizado</h2>
+              <p>Tens alguma data ou distância específica em mente? Essa é a solução ideal para você. Crie um plano personalizado com duração de 6 a 26 semanas e para qualquer distância entre 5 e 50 km — vamos te ajudar na conquista de seus objetivos.</p>
+              <a class="button is-salmon-button" href="#teste">Comece</a>
+            </div>
+          </div>
+          <div id="precos" class="plans-pricing">
+            <h2>Junte-se a milhões de pessoas que já estão treinando com o RunEvo,<br />seu aplicativo n.º 1 de treinamento de corrida.</h2>
+            <p>Comece seu plano hoje por apenas R$39,9 por mês / R$229,9 por ano.</p>
+            <a class="button is-salmon-button" href="#teste">Iniciar o seu teste gratuito</a>
+            <small>A primeira semana é gratuita. Cancele a qualquer momento.</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_how-it-works" aria-labelledby="how-title">
+        <div class="padding-global padding-section">
+          <div class="how-header">
+            <h2 id="how-title">Como funciona</h2>
+            <p>O RunEvo é simples, intuitivo e foi projetado para corredores de todos os níveis. Não importa se você está treinando para seus primeiros 5k ou se está tentando superar um recorde de maratona, você será orientado a cada passo do caminho.</p>
+            <a class="button is-salmon-button" href="#teste">Join Now</a>
+          </div>
+          <ol class="how-steps">
+            <li>
+              <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="13" y="4" width="22" height="40" rx="3"/><path d="M21 9h6"/></svg>
+              <h3>Baixar RunEvo</h3><p>Após criar uma conta, baixe o RunEvo no iOS ou Android. Seu plano estará disponível na ponta dos dedos.</p>
+            </li>
+            <li>
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M9 6h30v30H9z"/><path d="m14 11 5 5 5-5 5 5 5-5M14 31l5 5 5-5 5 5 5-5"/></svg>
+              <h3>Defina sua meta</h3><p>Escolha a distância ou a data da prova e nós criaremos um plano para ela, adaptado à sua experiência e ao seu cronograma.</p>
+            </li>
+            <li>
+              <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="31" cy="8" r="4"/><path d="m25 16 7 3 4 8m-11-11-5 8 7 4-4 10m4-14 8 3m-14 1-7 7m-1-10-5 7"/></svg>
+              <h3>Comece a treinar</h3><p>Siga seus treinos personalizados e rastreie suas corridas usando seus dispositivos favoritos, como o Garmin ou Apple Watch.</p>
+            </li>
+            <li>
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 7h20v14a10 10 0 0 1-20 0zM14 12H8v6a8 8 0 0 0 7 8m19-14h6v6a8 8 0 0 1-7 8M24 31v9m-9 2h18"/></svg>
+              <h3>Conquiste mais</h3><p>Mantenha a motivação em alta com o rastreamento do progresso, o suporte da comunidade e as dicas de treinamento para ajudar você a atingir seu potencial máximo.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="proximo-nivel" class="section_app-cta" aria-labelledby="app-cta-title">
+        <div class="app-cta-diagonal" aria-hidden="true"></div>
+        <div class="padding-global">
+          <div class="app-cta_component">
+            <img class="app-cta-image" src="assets/banner-4.webp" alt="Celulares e smartwatch exibindo o aplicativo RunEvo." />
+            <div class="app-cta-content">
+              <h2 id="app-cta-title">Evolua sua corrida com o RunEvo</h2>
+              <p>Tenha suas planilhas de corrida personalizadas, criadas sob medida para você atingir seus objetivos — desde o 1 km até ultramaratonas.</p>
+              <p class="app-coming-soon">Em breve disponível na App Store e no Google Play.</p>
+              <small>O app disponibiliza 8 semanas gratuitas*. Planilhas com menos de 8 semanas terão um período gratuito proporcionalmente menor.</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_waitlist" aria-labelledby="waitlist-title">
+        <div class="padding-global padding-section">
+          <div class="waitlist-card">
+            <div class="waitlist-copy">
+              <p class="eyebrow">Acesso antecipado</p>
+              <h2 id="waitlist-title">Entre para a lista de espera do RunEvo.</h2>
+              <p>Receba em primeira mão os próximos detalhes, atualizações e novidades sobre a disponibilidade do app.</p>
+            </div>
+            <form class="waitlist-form" data-waitlist-form>
+              <label for="waitlist-name">Como podemos te chamar?</label>
+              <input id="waitlist-name" name="name" type="text" placeholder="Como podemos te chamar?" autocomplete="name" required />
+              <label for="waitlist-email">Seu melhor e-mail</label>
+              <input id="waitlist-email" name="email" type="email" placeholder="Seu melhor e-mail" autocomplete="email" required />
+              <button class="button is-salmon-button" type="submit">Quero receber novidades</button>
+              <p class="form-feedback" data-waitlist-feedback role="status"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="suporte" class="section_faq" aria-labelledby="faq-title">
+        <div class="padding-global padding-section">
+          <div class="faq_component">
+            <h2 id="faq-title">Perguntas frequentes:<br />tudo o que você quer<br />saber sobre o<br />RunEvo</h2>
+            <div class="faq_list">
+              <details><summary>O RunEvo é para iniciantes?</summary><p>Sim. Nossa IA se adapta ao seu nível e constrói progressões seguras para você começar a correr com confiança.</p></details>
+              <details><summary>E se já tenho experiência?</summary><p>Quanto mais dados você tiver, melhor. O RunEvo usa seu histórico para criar planilhas cada vez mais precisas.</p></details>
+              <details><summary>Como funciona a personalização?</summary><p>A IA Evo analisa seu nível, histórico, metas e disponibilidade para criar planilhas 100% sob medida para você.</p></details>
+              <details><summary>Posso usar meu relógio?</summary><p>Sim. O RunEvo integra com Garmin, COROS, Polar e Amazfit para sync automático de treinos.</p></details>
+              <details><summary>O Strava funciona?</summary><p>Sim. Suas atividades e recordes sincronizam diretamente com o RunEvo.</p></details>
+              <details><summary>Quando o app sai?</summary><p>Estamos em fase final. Entre na lista de espera para ter acesso antecipado quando lançarmos.</p></details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <footer id="loja" class="site-footer">
+        <div class="padding-global padding-section">
+          <div class="footer-grid">
+            <div class="footer-brand"><span class="brand-wordmark" aria-label="RunEvo">RunEvo</span><p>Seu treinador de corrida personalizado.</p></div>
+            <div class="footer-column"><h2>Saiba mais</h2><a href="#inicio">SOBRE</a><a href="#recursos">MÉTODO</a><a href="#planos">PLANOS</a><a href="#suporte">SUPORTE</a><a href="#inicio">Termos e condições</a><a href="#inicio">Política de privacidade</a></div>
+            <div class="footer-column"><h2>Entre em contato conosco</h2><a href="mailto:contato@runevo.com.br">contato@runevo.com.br</a><div class="social-links"><a href="#inicio" aria-label="Instagram">◎</a><a href="#inicio" aria-label="Facebook">f</a><a href="#inicio" aria-label="Strava">S</a></div></div>
+          </div>
+          <div class="footer-bottom"><span>© 2026 RunEvo. Todos os direitos reservados.</span><span>Feito para corredores de todos os níveis.</span></div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
+
+
+
+
