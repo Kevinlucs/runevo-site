@@ -462,7 +462,15 @@ h1,h2,h3,h4,h5,h6,
   color:#739900;
   font-variant-numeric:tabular-nums;
 }
-.legal-content ul{
+.legal-content h3{
+  margin:2rem 0 .85rem;
+  color:#252a27;
+  font-family:"Outfit",Arial,sans-serif;
+  font-size:1.2rem;
+  font-weight:750;
+  line-height:1.25;
+}
+.legal-content :is(ul,ol){
   display:grid;
   gap:.5rem;
   margin:.5rem 0 1.25rem;
