@@ -336,3 +336,176 @@ h1,h2,h3,h4,h5,h6,
   font-weight: 500;
   font-size: medium;
 }
+
+/* Ícones sociais do rodapé */
+.social-links a{
+  overflow:hidden;
+  transition:border-color .2s ease,transform .2s ease,background-color .2s ease;
+}
+.social-links a:hover{
+  border-color:var(--run-evo-neon);
+  background:rgba(204,255,0,.08);
+  transform:translateY(-2px);
+}
+.social-links img{
+  display:block;
+  width:1.1rem;
+  height:1.1rem;
+  object-fit:contain;
+}
+.social-links a[aria-label="Strava"] img{height:1.2rem}
+.footer-column a[aria-current="page"]{color:var(--run-evo-neon)}
+
+/* Páginas legais: composição inspirada na hierarquia da referência, com a identidade RunEvo. */
+.legal-page{
+  background:var(--white);
+  color:#252a27;
+}
+.legal-page main{overflow:hidden}
+.legal-hero{
+  position:relative;
+  isolation:isolate;
+  min-height:20.5rem;
+  overflow:hidden;
+  background:var(--black);
+  color:var(--white);
+}
+.legal-hero::after{
+  position:absolute;
+  right:-2%;
+  bottom:-1px;
+  left:-2%;
+  z-index:2;
+  height:3.75rem;
+  background:var(--white);
+  clip-path:polygon(0 78%,100% 0,100% 100%,0 100%);
+  content:"";
+}
+.legal-hero-pattern{
+  position:absolute;
+  inset:0 auto 0 0;
+  z-index:-1;
+  width:min(24rem,35vw);
+  opacity:.26;
+  background:
+    repeating-radial-gradient(ellipse at -4% 50%,transparent 0 25px,rgba(204,255,0,.32) 27px 29px,transparent 31px 48px);
+  transform:skewX(-8deg) scale(1.1);
+}
+.legal-hero-inner{
+  width:100%;
+  max-width:63rem;
+  margin-inline:auto;
+  padding-top:5.75rem;
+  padding-bottom:6.25rem;
+}
+.legal-eyebrow{
+  margin:0 0 1rem;
+  color:var(--white);
+  font-size:.78rem;
+  font-weight:700;
+  letter-spacing:.16em;
+}
+.legal-eyebrow span{color:var(--run-evo-neon)}
+.legal-hero h1{
+  max-width:58rem;
+  margin:0;
+  color:var(--white);
+  font-family:"Outfit",Arial,sans-serif;
+  font-size:clamp(3.35rem,7vw,6rem);
+  font-weight:800;
+  line-height:.98;
+  letter-spacing:-.055em;
+}
+.legal-document{
+  background:var(--white);
+  color:#252a27;
+}
+.legal-content{
+  width:100%;
+  max-width:50rem;
+  margin-inline:auto;
+  padding:4.5rem 2rem 6.5rem;
+  font-size:1rem;
+  line-height:1.67;
+}
+.legal-content p{margin:0 0 1.15rem}
+.legal-content .legal-date{
+  margin-bottom:1.5rem;
+  color:#555d58;
+  font-weight:600;
+}
+.legal-content a{
+  color:#587500;
+  font-weight:600;
+  text-decoration:underline;
+  text-decoration-color:rgba(88,117,0,.4);
+  text-underline-offset:.16em;
+}
+.legal-content a:hover{color:#344600;text-decoration-color:currentColor}
+.legal-content section{
+  scroll-margin-top:calc(var(--header-height) + 1.5rem);
+  margin-top:3.25rem;
+}
+.legal-content h2{
+  display:flex;
+  gap:.8rem;
+  align-items:flex-start;
+  margin:0 0 1rem;
+  color:#111411;
+  font-family:"Outfit",Arial,sans-serif;
+  font-size:1.65rem;
+  font-weight:800;
+  line-height:1.15;
+  letter-spacing:-.025em;
+}
+.legal-content h2 span{
+  color:#739900;
+  font-variant-numeric:tabular-nums;
+}
+.legal-content ul{
+  display:grid;
+  gap:.5rem;
+  margin:.5rem 0 1.25rem;
+  padding-left:1.45rem;
+}
+.legal-content li::marker{color:#739900}
+.legal-notice{
+  margin:2.25rem 0 3rem;
+  padding:1.35rem 1.5rem;
+  border-left:4px solid var(--run-evo-neon);
+  border-radius:0 .75rem .75rem 0;
+  background:#eef5d8;
+  color:#252a27;
+}
+.legal-notice strong{
+  display:block;
+  margin-bottom:.35rem;
+  color:#111411;
+  font-family:"Outfit",Arial,sans-serif;
+  font-size:1.05rem;
+}
+.legal-notice p{margin:0}
+.legal-contact{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:.35rem;
+  margin-top:1.25rem;
+  padding:1.25rem 1.5rem;
+  border:1px solid #d9ded8;
+  border-radius:.75rem;
+  background:#f0f3ee;
+  font-style:normal;
+}
+.legal-contact strong{color:#111411}
+
+@media (max-width:767px){
+  .legal-hero{min-height:17rem}
+  .legal-hero-inner{padding-top:4rem;padding-bottom:5rem}
+  .legal-hero::after{height:2.5rem}
+  .legal-hero h1{font-size:clamp(2.85rem,13vw,4.25rem)}
+  .legal-content{padding:3rem 1.25rem 4.5rem;font-size:.975rem}
+  .legal-content section{margin-top:2.6rem}
+  .legal-content h2{font-size:1.4rem}
+  .legal-notice{padding:1.15rem 1.2rem}
+}
